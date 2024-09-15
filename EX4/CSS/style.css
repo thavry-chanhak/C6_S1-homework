@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    background-color: #f3f1f1;
+    grid-template-columns: repeat(4, 1f);
+    grid-template-rows: 30px 30px 50px 100px  30px ;
+    grid-template-areas: "header header header header"
+    "Navigation Navigation Navigation Navigation"
+    "towtext Main Main Main"
+    "towtext Comments Comments Comments"
+    "footer footer footer footer";
+}
+.towtext{
+   padding: 10px;
+}
+.Related{
+    grid-area: Related;
+    background-color: aqua;
+    height: 15vh;
+    overflow: 10vh;
+    background-color: #a8a1a163;
+}
+.Search{
+    grid-area: Search;
+    background-color: rgba(236, 234, 232, 0.941);
+    height: 15vh;
+    margin: 10px;
+}
+.header {
+    grid-area: header;
+    background-color: black;
+     color: #ffffff;
+}
+.Navigation {
+     grid-area: Navigation;
+     background-color: rgba(82, 80, 80, 0.664);
+}
+.towtext {
+    grid-area: towtext;
+    background-color: #cac6c655;
+
+}
+.footer {
+     grid-area: footer;
+     background-color: black;
+     color: white;
+}
+.Comments{
+
+    grid-area: Comments;
+    background-color: rgba(205, 200, 200, 0.881);
+    /* height: 20vh */
+
+}
+.Main{
+    background-color: rgb(216, 215, 215);
+    grid-area: Main;
+    height: 20vh;
+}
